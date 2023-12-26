@@ -1,5 +1,3 @@
-/* navbar.css */
-
 .navbar {
     position: fixed;
     top: 0;
@@ -15,10 +13,11 @@
   }
   
   .navbar a {
-    margin-left: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
     font-size: 20pt;
     text-decoration: none;
-    color: black; 
+    color: white; 
     font-weight: bold;
   }
   
@@ -28,6 +27,8 @@
 
   @media screen and (max-width: 600px) {
     .navbar a {
+      margin-left: 10px;
+      margin-right: 10px;
       font-size: 3.2vw; 
     }
   }

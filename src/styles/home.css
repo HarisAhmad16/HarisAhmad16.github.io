@@ -1,0 +1,19 @@
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    background: linear-gradient(to right, #6962a7, #105ca3); 
+  }
+  
+  h1 {
+    font-size: 8em; 
+    color: #fff; 
+    text-align: center;
+  }
+  
+  @media screen and (max-width: 600px) {
+    h1 {
+      font-size: 11vw; 
+    }
+  }

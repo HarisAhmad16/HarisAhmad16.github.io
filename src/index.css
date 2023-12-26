@@ -3,10 +3,21 @@
   src: local('TechNoir'), url('./fonts/TechNoir-8dLD.ttf') format('truetype')
 }
 
+@font-face {
+  font-family: 'Oswald';
+  src: local('Oswald'), url('./fonts/Oswald-ymXe.ttf') format('truetype')
+}
+
+@font-face {
+  font-family: 'OswaldBold';
+  src: local('OswaldBold'), url('./fonts/Oswald-Bold.ttf') format('truetype')
+}
+
+
 body {
   margin: 0;
 }
 
-a { 
-  font-family: 'TechNoir';
+a, h1 { 
+  font-family: 'OswaldBold';
 }

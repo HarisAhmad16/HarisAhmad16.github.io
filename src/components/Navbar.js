@@ -6,9 +6,9 @@ class Navbar extends React.Component {
     return (
       <div className="navbar">
         <div className="navbar-container">
-          <a href="/">Home</a>
-          <a href="/about">About</a>
-          <a href="/experience">Experience</a>
+          <a href="/">HOME</a>
+          <a href="/about">ABOUT</a>
+          <a href="/experience">EXPERIENCE</a>
         </div>
       </div>
     );

@@ -37,5 +37,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "postcss": "^8.4.32",
+    "postcss-simple-vars": "^7.0.1"
   }
 }

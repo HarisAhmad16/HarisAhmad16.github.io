@@ -1,0 +1,44 @@
+.about {
+  background: #0E0F2E;
+  margin-top: -1px;
+  height: 100vh;
+}
+
+.title {
+  font-size: 5em;
+  color: #fff;
+  margin: 0;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+@media screen and (max-width: 600px) {
+  .title {
+    font-size: 11vw;
+  }
+}
+
+.details {
+  color: #fff;
+  padding: 0 100px;
+  text-align: center;
+  font-size: 1.1em;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+}
+
+.social-icons .linkedin-icon {
+  color: #0A66C2;
+}
+
+.social-icons .github-icon {
+  color: #fff;
+}

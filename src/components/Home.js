@@ -1,14 +1,15 @@
 import React from "react";
 import '../styles/home.css';
 
-class Navbar extends React.Component {
+class Home extends React.Component {
   render() {
     return (
-      <div className="home">
+      <div id="home" className="home">
         <h1>HARIS AHMAD</h1>
+        <h2>SOFTWARE ENGINEER</h2>
       </div>
     );
   }
 }
 
-export default Navbar;
+export default Home;

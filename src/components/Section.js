@@ -1,17 +1,36 @@
-import React from "react";
-import '../styles/section.css'; // Import the section-specific styles
+// Section.js
+import React, { useState } from 'react';
+import PropTypes from 'prop-types';
+import '../styles/section.css';
 
-class Section extends React.Component {
-  render() {
-    return (
-      <div className="section">
-        <div className="clip-text clip-text_fifteen clip-text--cover">
-          {this.props.title}
+const Section = ({ heading, details, imageUrl, subheading }) => {
+  const [isHovered, setHovered] = useState(false);
+
+  return (
+    <main>
+      <div className={`card ${isHovered ? 'hovered' : ''}`} onMouseEnter={() => setHovered(true)} onMouseLeave={() => setHovered(false)}>
+        <img src={imageUrl} alt="" />
+        <div className="card-content">
+          <h2>
+            {heading}
+          </h2>
+          <h3>
+            {subheading}
+          </h3>
+          <p>
+            {details}
+          </p>
         </div>
       </div>
-    );
-  }
-}
+    </main>
+  );
+};
+
+Section.propTypes = {
+  heading: PropTypes.string.isRequired,
+  subheading: PropTypes.string.isRequired,
+  details: PropTypes.string.isRequired,
+  imageUrl: PropTypes.string.isRequired,
+};
 
 export default Section;
- 

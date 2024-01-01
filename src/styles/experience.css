@@ -1,0 +1,16 @@
+.experience {
+  background-color: #0E0F2E;
+  height: 100%;
+}
+
+.holder2 {
+  font-size: 10em;
+  color: #000;
+  margin: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .holder2 {
+    font-size: 11vw;
+  }
+}

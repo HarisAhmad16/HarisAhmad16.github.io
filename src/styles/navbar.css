@@ -22,7 +22,7 @@
   }
   
   .navbar a:hover {
-    color: #aaf;
+    color: rgb(140, 139, 228);
   }
 
   @media screen and (max-width: 600px) {

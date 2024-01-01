@@ -1,125 +1,102 @@
-.wrapper {
-  text-align: center;
+/* Colors */
+:root {
+  --color-primary-white: rgb(240, 240, 240);
+  --background-color: /* Your static background color */;
 }
 
-.title {
-  font-size: 2em;
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  font-family: 'Raleway';
+}
+
+.card {
+  width: 80rem;
+  height: 36rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
   position: relative;
-  margin: 0 auto 1em;
-  padding: 1em 1em .25em 1em;
-  text-align: center;
-  text-transform: uppercase;
+  color: var(--color-primary-white);
+  background-color: var(--background-color);
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  transition: #000 0.3s ease;
+
+  img {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.9;
+    transition: opacity 0.2s ease-out;
+  }
+
+  h2 {
+    position: absolute;
+    inset: auto auto 30px 30px;
+    margin: 0;
+    transition: inset 0.3s 0.3s ease-out;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 2vw;
+  }
+
+  p,
+  a,
+  h3 {
+    position: absolute;
+    opacity: 0;
+    max-width: 80%;
+    transition: opacity 0.3s ease-out;
+  }
+
+  p {
+    inset: auto auto 80px 30px;
+  }
+
+  h3 {
+    inset: auto auto 160px 30px;
+    font-size: 1.5vw;
+  }
+
+  a {
+    inset: auto auto 40px 30px;
+    color: inherit;
+    text-decoration: none;
+  }
+
+  &:hover h2 {
+    inset: auto auto 220px 30px;
+    transition: inset 0.3s ease-out;
+  }
+
+  &:hover h3 {
+    opacity: 0.8;
+    transition: opacity 0.5s 0.1s ease-in;
+  }
+
+  &:hover p,
+  &:hover a {
+    opacity: 0.8;
+    transition: opacity 0.5s 0.1s ease-in;
+  }
+
+  &:hover img {
+    transition: opacity 0.3s ease-in;
+    opacity: 0.8;
+  }
 }
 
-.title:after {
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  width: 240px;
-  height: 4px;
-  margin-left: -120px;
-  content: '';
+.material-symbols-outlined {
+  vertical-align: middle;
+}
+
+.hovered {
   background-color: #fff;
 }
 
-/* Clip text element */
-.clip-text {
-  font-size: 3em;
-  font-weight: bold;
-  line-height: 1;
-  position: relative;
-  display: inline-block;
-  margin: .25em;
-  padding: .5em .75em;
-  text-align: center;
-  /* Color fallback */
-  color: #fff;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.clip-text:before,
-.clip-text:after {
-  position: absolute;
-  content: '';
-}
-
-/* Background */
-.clip-text:before {
-  z-index: -2;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-image: inherit;
-}
-
-/* Text Background (black zone) */
-.clip-text:after {
-  position: absolute;
-  z-index: -1;
-  top: .125em;
-  right: .125em;
-  bottom: .125em;
-  left: .125em;
-  background-color: #000;
-}
-
-/* Change the background position to display letter when the black zone isn't here */
-.clip-text--no-textzone:before {
-  background-position: -.75em 0;
-}
-
-.clip-text--no-textzone:after {
-  content: none;
-}
-
-/* Use Background-size cover for photo background and no-repeat background */
-.clip-text--cover,
-.clip-text--cover:before {
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-          background-size: cover;
-background-position: 50% 50%;
-}
-
-.clip-text_six {
-  background-image: url(https://picsum.photos/480/200?random=3);
-}
-
-.clip-text_seven {
-  background-image: url(https://picsum.photos/480/200?random=4);
-}
-
-.clip-text_eight {
-  background-image: url(https://picsum.photos/480/200?random=6);
-}
-
-.clip-text_nine {
-  background-image: url(https://picsum.photos/480/200?random=5);
-}
-
-.clip-text_ten {
-  background-image: url(https://picsum.photos/480/200?random=7);
-}
-
-.clip-text_eleven {
-  background-image: url(https://picsum.photos/480/200?random=8);
-  background-size: cover;
-}
-
-.clip-text_twelve {
-  background-image: url(https://picsum.photos/1080/200?random=9);
-}
-
-.clip-text_thirteen {
-  background-image: url(https://picsum.photos/480/200?random=10);
-}
-
-.clip-text_fourteen {
-  background-image: url(https://picsum.photos/480/200?random=11);
-}
-
-.clip-text_fifteen {
-  background-image: url(https://picsum.photos/480/200?random=12);
-}

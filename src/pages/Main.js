@@ -1,6 +1,8 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import Home from "../components/Home";
+import About from "../components/About";
+import Experience from "../components/Experience";
 
 class Main extends React.Component {
     render() {
@@ -8,6 +10,7 @@ class Main extends React.Component {
         <React.Fragment>
           <Navbar />
           <Home />
+          <About />
         </React.Fragment>
       )
     }

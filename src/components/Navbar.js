@@ -17,7 +17,6 @@ class Navbar extends React.Component {
           <a href="/" onClick={(e) => this.handleScrollTo(e, "home")}>HOME</a>
           <a href="/about" onClick={(e) => this.handleScrollTo(e, "about")}>ABOUT</a>
           <a href="/experience" onClick={(e) => this.handleScrollTo(e, "experience")}>EXPERIENCE</a>
-          <a>CONTACT</a>
         </div>
       </div>
     );

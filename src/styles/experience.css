@@ -1,16 +1,19 @@
 .experience {
   background-color: #0E0F2E;
   height: 100%;
+  margin-top: -1px;
 }
 
-.holder2 {
-  font-size: 10em;
-  color: #000;
+.exptitle {
+  padding-top: 60px;
+  font-size: 5em;
+  color: #fff;
   margin: 0;
+  text-align: center;
 }
 
 @media screen and (max-width: 600px) {
-  .holder2 {
-    font-size: 11vw;
+  .exptitle {
+    font-size: 6vw;
   }
 }

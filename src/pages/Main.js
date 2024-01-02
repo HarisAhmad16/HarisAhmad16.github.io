@@ -11,6 +11,7 @@ class Main extends React.Component {
           <Navbar />
           <Home />
           <About />
+          <Experience />
         </React.Fragment>
       )
     }

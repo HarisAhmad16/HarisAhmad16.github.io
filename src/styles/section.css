@@ -1,9 +1,3 @@
-/* Colors */
-:root {
-  --color-primary-white: rgb(240, 240, 240);
-  --background-color: /* Your static background color */;
-}
-
 main {
   display: flex;
   flex-direction: column;
@@ -14,7 +8,7 @@ main {
 }
 
 .card {
-  width: 80rem;
+  width: 80%;
   height: 36rem;
   border-radius: 10px;
   overflow: hidden;
@@ -36,32 +30,38 @@ main {
     transition: opacity 0.2s ease-out;
   }
 
-  h2 {
+  .heading {
     position: absolute;
-    inset: auto auto 30px 30px;
+    inset: auto auto 60px 30px;
     margin: 0;
     transition: inset 0.3s 0.3s ease-out;
     font-weight: bold;
     text-transform: uppercase;
-    font-size: 2vw;
+    font-size: 2.7vw;
+  }
+
+  .subheading {
+    position: absolute;
+    inset: auto auto 20px 30px;
+    margin: 0;
+    color: #fff;
+    transition: inset 0.3s 0.3s ease-out;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.7vw;
   }
 
   p,
-  a,
-  h3 {
+  a {
     position: absolute;
     opacity: 0;
     max-width: 80%;
     transition: opacity 0.3s ease-out;
+    color: #fff;
   }
 
   p {
-    inset: auto auto 80px 30px;
-  }
-
-  h3 {
-    inset: auto auto 160px 30px;
-    font-size: 1.5vw;
+    inset: auto auto 200px 30px;
   }
 
   a {
@@ -70,14 +70,14 @@ main {
     text-decoration: none;
   }
 
-  &:hover h2 {
-    inset: auto auto 220px 30px;
+  &:hover .heading {
+    inset: auto auto 420px 30px;
     transition: inset 0.3s ease-out;
   }
 
-  &:hover h3 {
-    opacity: 0.8;
-    transition: opacity 0.5s 0.1s ease-in;
+  &:hover .subheading {
+    inset: auto auto 380px 30px;
+    transition: inset 0.3s ease-out;
   }
 
   &:hover p,
@@ -87,8 +87,8 @@ main {
   }
 
   &:hover img {
-    transition: opacity 0.3s ease-in;
-    opacity: 0.8;
+    transition: blur(10px) 0.3s ease-in;
+    filter: blur(10px);
   }
 }
 
@@ -100,3 +100,33 @@ main {
   background-color: #fff;
 }
 
+@media (max-width: 600px) {
+  .card {
+    width: 120%;
+    height: 36rem;
+  }
+  .card p {
+    inset: auto auto 50px 30px;
+    font-size: 1.4vh;
+  }
+
+  .card .heading {
+    font-size: 4.3vw;
+    inset: auto auto 40px 20px;
+  }
+
+  .card .subheading {
+    font-size: 3.1vw;
+    inset: auto auto 20px 20px;
+  }
+
+  .card:hover .heading {
+    inset: auto auto 400px 30px;
+    transition: inset 0.3s ease-out;
+  }
+
+  .card:hover .subheading {
+    inset: auto auto 380px 30px;
+    transition: inset 0.3s ease-out;
+  }
+}

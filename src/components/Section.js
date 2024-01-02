@@ -1,4 +1,3 @@
-// Section.js
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import '../styles/section.css';
@@ -11,10 +10,10 @@ const Section = ({ heading, details, imageUrl, subheading }) => {
       <div className={`card ${isHovered ? 'hovered' : ''}`} onMouseEnter={() => setHovered(true)} onMouseLeave={() => setHovered(false)}>
         <img src={imageUrl} alt="" />
         <div className="card-content">
-          <h2>
+          <h2 className='heading'>
             {heading}
           </h2>
-          <h3>
+          <h3 className='subheading'>
             {subheading}
           </h3>
           <p>

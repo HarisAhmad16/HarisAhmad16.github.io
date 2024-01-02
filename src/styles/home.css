@@ -16,6 +16,18 @@
   padding: 0;
 }
 
+.shape1 {
+	height: 150px;
+	width: 150px;
+	position: absolute;
+	background: -o-linear-gradient(315deg, #ff5b84, #eb3461);
+	background: linear-gradient(135deg, #ff5b84, #eb3461);
+	border-radius: 50%;
+	bottom: 130px;
+	right: -50px;
+	z-index: -1;
+}
+
 h1 {
   font-size: 10em;
   color: #fff;

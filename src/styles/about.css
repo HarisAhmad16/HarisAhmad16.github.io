@@ -48,6 +48,11 @@
   color: #fff;
 }
 
+.social-icons .mail-icon {
+  color: #fff;
+}
+
+
 .aboutcard {
   display: flex;
   flex-direction: column;
@@ -71,7 +76,7 @@
 
 @media screen and (max-width: 600px) {
   .title {
-    font-size: 6vw;
+    font-size: 7vw;
   }
 
   .aboutcard {

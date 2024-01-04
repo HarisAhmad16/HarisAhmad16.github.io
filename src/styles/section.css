@@ -61,7 +61,7 @@ main {
   }
 
   p {
-    inset: auto auto 200px 30px;
+    inset: auto auto 120px 30px;
   }
 
   a {
@@ -71,12 +71,12 @@ main {
   }
 
   &:hover .heading {
-    inset: auto auto 420px 30px;
+    inset: auto auto 340px 30px;
     transition: inset 0.3s ease-out;
   }
 
   &:hover .subheading {
-    inset: auto auto 380px 30px;
+    inset: auto auto 300px 30px;
     transition: inset 0.3s ease-out;
   }
 
@@ -97,7 +97,7 @@ main {
 }
 
 .hovered {
-  background-color: #fff;
+  background-color: #0E0F2E;
 }
 
 @media (max-width: 600px) {
@@ -111,12 +111,12 @@ main {
   }
 
   .card .heading {
-    font-size: 4.3vw;
+    font-size: 4.8vw;
     inset: auto auto 40px 20px;
   }
 
   .card .subheading {
-    font-size: 3.1vw;
+    font-size: 3.5vw;
     inset: auto auto 20px 20px;
   }
 

@@ -16,7 +16,7 @@ class About extends React.Component {
           </h3>
 
           <h3 className="lowdetails">
-            Feel free to contact or connect with me to discuss opportunities, sharing insights or explore new collaborations together!
+            Feel free to connect with me or reach out to discuss opportunities, sharing insights or explore new collaborations together!
           </h3>
           <div className="social-icons">
             <a href="mailto:mha149@sfu.ca" className="mail-icon">
@@ -24,9 +24,6 @@ class About extends React.Component {
             </a>
             <a href="https://www.linkedin.com/in/harisahmad16/" target="_blank" rel="noopener noreferrer" className="linkedin-icon">
               <FontAwesomeIcon icon={faLinkedin} size="4x" />
-            </a>
-            <a href="https://github.com/HarisAhmad16" target="_blank" rel="noopener noreferrer" className="github-icon">
-              <FontAwesomeIcon icon={faGithub} size="4x" />
             </a>
           </div>
         </div>

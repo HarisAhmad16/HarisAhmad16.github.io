@@ -1,96 +1,16 @@
 .about {
-  background: #0E0F2E;
+  background: #05061E;
   margin-top: -1px;
   height: 101vh;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start; 
+  justify-content: flex-start; 
 }
 
 .title {
-  font-size: 5em;
-  color: #fff;
-  margin: 0;
-  text-align: center;
+  font-size: 10em;
+  color: rgba(255, 255, 255, 0.062); 
+  margin: 60px; 
+  text-align: left; 
   text-transform: capitalize;
-}
-
-.details {
-  color: #fff;
-  padding: 0 100px;
-  text-align: center;
-  font-size: 1.3em;
-  margin-bottom: 0;
-
-}
-
-.lowdetails {
-  color: #fff;
-  text-align: center;
-  font-size: 1.3em;
-}
-
-.social-icons {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-.social-icons a {
-  margin: 0 10px;
-}
-
-.social-icons .linkedin-icon {
-  color: #0A66C2;
-}
-
-.social-icons .github-icon {
-  color: #fff;
-}
-
-.social-icons .mail-icon {
-  color: #fff;
-}
-
-
-.aboutcard {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 80%;
-  height: 70%;
-  padding: 35px;
-
-  border-radius: 0px;
-  background-color: rgba(255, 255, 255, 0.1);
-  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
-}
-
-.line {
-  width: 100%;
-  height: 4px;
-  background-color: rgb(142, 3, 255);
-  opacity: 0.7;
-  margin-bottom: 10px;
-}
-
-@media screen and (max-width: 600px) {
-  .title {
-    font-size: 7vw;
-  }
-
-  .aboutcard {
-    width: 70%;
-    height: 70%;
-  }
-  
-  .details {
-    font-size: 1.7vh;
-    padding: 0 20px;
-  }
-
-  .lowdetails {
-    font-size: 1.7vh;
-    padding: 0 20px;
-  }
 }

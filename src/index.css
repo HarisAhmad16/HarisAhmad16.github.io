@@ -1,15 +1,4 @@
-@font-face {
-  font-family: 'TechNoir';
-  src: local('TechNoir'), url('./fonts/TechNoir-8dLD.ttf') format('truetype')
-}
-
-@font-face {
-  font-family: 'OswaldBold';
-  src: local('OswaldBold'), url('./fonts/Oswald-Bold.ttf') format('truetype')
-}
-
 @import url('https://fonts.googleapis.com/css?family=Raleway:700,900');
-
 
 body {
   margin: 0;

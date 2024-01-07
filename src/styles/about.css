@@ -1,6 +1,6 @@
 .about {
   position: relative;
-  background: #05061E;
+  background: linear-gradient(0deg, #130d30 12%, #05061E 41%);
   margin-top: -1px;
   height: 101vh;
   display: flex;
@@ -9,9 +9,9 @@
 }
 
 .title {
-  font-size: 20em;
+  font-size: 10em;
   color: rgba(255, 255, 255, 0.144);
-  margin-top: 100px;
+  margin-top: 200px;
   margin-left: 95px;
   text-align: left;
 }
@@ -24,7 +24,7 @@
   padding: 70px;
   box-sizing: border-box;
   font-size: 0.50em;
-  margin-top: 250px;
+  margin-top: 300px;
 }
 
 .about-details {
@@ -36,16 +36,17 @@
 }
 
 .social-icons a {
-  margin-right: 20px; 
+  margin-right: 20px;
 }
 
 @media screen and (max-width: 600px) {
   .title {
-    font-size: 19.8vw;
+    font-size: 13vw;
     margin-left: 20px;
     margin-right: 0;
-    margin-top: 170px;
+    margin-top: 160px;
   }
+
   .intro-text {
     position: absolute;
     top: 0;
@@ -54,13 +55,21 @@
     padding: 0px;
     box-sizing: border-box;
     font-size: 0.1em;
-    margin-top: 200px;
+    margin-top: 210px;
+    margin-left: -10px;
   }
-  .about-details, .about-connect {
-    font-size:3.5vw;
-  }  
+
+  .about-details,
+  .about-connect {
+    font-size: 3.5vw;
+  }
 
   .social-icons {
-    font-size: 1vw;;
+    font-size: 1vw;
+    ;
+  }
+
+  .about {
+    height: 80vh;
   }
 }

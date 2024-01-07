@@ -51,8 +51,7 @@ main {
     font-size: 1.7vw;
   }
 
-  p,
-  a {
+  li {
     position: absolute;
     opacity: 0;
     max-width: 80%;
@@ -60,27 +59,23 @@ main {
     color: #fff;
   }
 
-  p {
-    inset: auto auto 120px 30px;
-  }
-
-  a {
-    inset: auto auto 40px 30px;
-    color: inherit;
-    text-decoration: none;
+  li {
+    inset: auto auto -270px 30px;
+    position: relative;
+    margin-top: 10px;
   }
 
   &:hover .heading {
-    inset: auto auto 340px 30px;
+    inset: auto auto 370px 30px;
     transition: inset 0.3s ease-out;
   }
 
   &:hover .subheading {
-    inset: auto auto 300px 30px;
+    inset: auto auto 330px 30px;
     transition: inset 0.3s ease-out;
   }
 
-  &:hover p,
+  &:hover li,
   &:hover a {
     opacity: 0.8;
     transition: opacity 0.5s 0.1s ease-in;
@@ -92,12 +87,13 @@ main {
   }
 }
 
-.material-symbols-outlined {
-  vertical-align: middle;
-}
-
 .hovered {
   background-color: #0E0F2E;
+}
+
+.misc {
+  font-size: 1em;
+  margin-bottom: 0;
 }
 
 @media (max-width: 600px) {
@@ -105,6 +101,7 @@ main {
     width: 120%;
     height: 36rem;
   }
+
   .card p {
     inset: auto auto 50px 30px;
     font-size: 1.4vh;

@@ -33,11 +33,12 @@ h2 {
     font-size: 11vw;
     margin: -30px;
   }
+
   h2 {
     font-size: 4.2vw;
   }
 
   .home {
-    background-position: center top; 
+    background-position: center top;
   }
 }

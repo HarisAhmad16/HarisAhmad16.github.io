@@ -1,16 +1,66 @@
 .about {
+  position: relative;
   background: #05061E;
   margin-top: -1px;
   height: 101vh;
   display: flex;
-  align-items: flex-start; 
-  justify-content: flex-start; 
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
 .title {
-  font-size: 10em;
-  color: rgba(255, 255, 255, 0.062); 
-  margin: 60px; 
-  text-align: left; 
-  text-transform: capitalize;
+  font-size: 20em;
+  color: rgba(255, 255, 255, 0.144);
+  margin-top: 100px;
+  margin-left: 95px;
+  text-align: left;
+}
+
+.intro-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 95%;
+  padding: 70px;
+  box-sizing: border-box;
+  font-size: 0.50em;
+  margin-top: 250px;
+}
+
+.about-details {
+  color: rgb(255, 255, 255);
+}
+
+.social-icons {
+  margin-left: 30px;
+}
+
+.social-icons a {
+  margin-right: 20px; 
+}
+
+@media screen and (max-width: 600px) {
+  .title {
+    font-size: 19.8vw;
+    margin-left: 20px;
+    margin-right: 0;
+    margin-top: 170px;
+  }
+  .intro-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 0.1em;
+    margin-top: 200px;
+  }
+  .about-details, .about-connect {
+    font-size:3.5vw;
+  }  
+
+  .social-icons {
+    font-size: 1vw;;
+  }
 }

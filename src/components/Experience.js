@@ -12,10 +12,10 @@ class Experience extends React.Component {
         <div>
           <h2 className="exptitle">Work Experience</h2>
           <Section
-            heading="COAST CAPITAL SAVINGS"
+            heading="Coast Capital Savings"
             subheading="Software Developer Intern"
             details={[
-              " Developed a multi-threaded program to analyze over 100,000 credit card statuses, resulting in a condition correction for all stolen, damaged, inactive, or lost credit cards",
+              "Developed a multi-threaded program to analyze over 100,000 credit card statuses, resulting in a condition correction for all stolen, damaged, inactive, or lost credit cards",
               "Created scripts in Python that evaluated and exported banking data into CSV files to help underly the businesses current needs and a variety of differences of monetary value",
               "Performed multiple data fixes by re-evaluating records from the Oracle database and JAR files, resolving a total financial impact of up to $500,000",
               "Corrected the interest payment in the core banking system by configuring the penalty rate API, resolving incorrect charges to 1200 bank members"

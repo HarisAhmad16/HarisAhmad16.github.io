@@ -102,28 +102,42 @@ main {
     height: 36rem;
   }
 
-  .card p {
-    inset: auto auto 50px 30px;
-    font-size: 1.4vh;
+  .card img {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.9;
+    filter: blur(3px);
   }
 
-  .card .heading {
-    font-size: 4.8vw;
-    inset: auto auto 40px 20px;
+  .heading {
+    position: absolute;
+    inset: auto auto 420px 30px;
+    margin: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 5vw;
   }
 
-  .card .subheading {
-    font-size: 3.5vw;
-    inset: auto auto 20px 20px;
-  }
-
-  .card:hover .heading {
-    inset: auto auto 400px 30px;
-    transition: inset 0.3s ease-out;
-  }
-
-  .card:hover .subheading {
+  .subheading {
+    position: absolute;
     inset: auto auto 380px 30px;
-    transition: inset 0.3s ease-out;
+    margin: 0;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 4vw;
+  }
+
+  li {
+    inset: auto auto -200px 10px;
+    padding-right: 50px;
+    position: relative;
+    margin-top: 10px;
+    font-size: 1.4vh;
+    color: white;
   }
 }

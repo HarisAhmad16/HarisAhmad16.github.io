@@ -4,6 +4,7 @@ import Section from "./Section";
 import ccs from '../images/ccs.jpg'
 import article from '../images/article.jpg'
 import bgc from '../images/bgc.jpeg'
+import prince from '../images/prince.png'
 
 class Experience extends React.Component {
   render() {
@@ -45,7 +46,17 @@ class Experience extends React.Component {
             ]}
             imageUrl={bgc}
           />
-        </div>
+          <Section
+            heading="Prince's Grand Escape"
+            subheading="A 2d Operating System Research Project"
+            details={[
+              "Devised a game application for a research project to teach operating systems concepts to other students",
+              "Implemeneted quiz pop ups and drag and drops on task attempts to illustrate OS topics and gave the user freedom to move around to decide on their path to escape",
+              "Leveraged Docker for application containerization and utilized SFU services to host the game through Netlify"
+            ]}
+            imageUrl={prince}
+          />
+        </div>H
       </div>
     );
   }

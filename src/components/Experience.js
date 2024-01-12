@@ -6,6 +6,7 @@ import article from '../images/article.jpg'
 import bgc from '../images/bgc.jpeg'
 import prince from '../images/prince.png'
 import dd from '../images/dailydime.png'
+import ct from '../images/consumable.png'
 
 class Experience extends React.Component {
   render() {
@@ -75,7 +76,18 @@ class Experience extends React.Component {
             ifProject={true}
             technologies="TypeScript, Express, React-Three-Fiber, PostgreSQL, Docker, Netlify, Github"
           />
-        </div>H
+          <Section
+            heading="Consumables Tracker"
+            subheading="A Desktop App to track groceries"
+            details={[
+              "Developed a REST API using Spring Boot and a Swing-based GUI to facilitate a client-to-server communication for managing consumable user data",
+              "Utilized Object Oriented Programming and a MVC architecture to accommodate the type of consumables, ensuring redundancy is limited"
+            ]}
+            imageUrl={ct}
+            ifProject={true}
+            technologies="Java, Spring Boot, Swing, Github"
+          />
+        </div>
       </div>
     );
   }

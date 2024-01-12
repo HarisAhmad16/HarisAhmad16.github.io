@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import '../styles/section.css';
 
-const Section = ({ heading, details, imageUrl, subheading }) => {
+const Section = ({ heading, details, imageUrl, subheading, ifProject, technologies }) => {
   const [isHovered, setHovered] = useState(false);
 
   return (
@@ -21,6 +21,7 @@ const Section = ({ heading, details, imageUrl, subheading }) => {
               <li key={index}>{detail}</li>
             ))}
           </ul>
+          {ifProject && <p>Technologies: {technologies} </p>}
         </div>
       </div>
     </main>
@@ -32,6 +33,8 @@ Section.propTypes = {
   subheading: PropTypes.string.isRequired,
   details: PropTypes.arrayOf(PropTypes.string).isRequired,
   imageUrl: PropTypes.string.isRequired,
+  ifProject: PropTypes.bool.isRequired,
+  technologies: PropTypes.string
 };
 
 export default Section;

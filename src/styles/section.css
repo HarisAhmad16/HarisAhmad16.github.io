@@ -51,7 +51,7 @@ main {
     font-size: 1.7vw;
   }
 
-  li {
+  li, p {
     position: absolute;
     opacity: 0;
     max-width: 80%;
@@ -61,6 +61,12 @@ main {
 
   li {
     inset: auto auto -270px 30px;
+    position: relative;
+    margin-top: 10px;
+  }
+
+  p {
+    inset: auto auto -280px 30px;
     position: relative;
     margin-top: 10px;
   }
@@ -76,7 +82,8 @@ main {
   }
 
   &:hover li,
-  &:hover a {
+  &:hover a,
+  &:hover p {
     opacity: 0.8;
     transition: opacity 0.5s 0.1s ease-in;
   }
@@ -132,11 +139,21 @@ main {
     font-size: 4vw;
   }
 
-  li {
+  li{
     inset: auto auto -200px 10px;
     padding-right: 50px;
     position: relative;
     margin-top: 10px;
+    font-size: 1.4vh;
+    color: white;
+  }
+
+  p {
+    inset: auto auto -220px 10px;
+    padding-right: 50px;
+    position: relative;
+    margin-top: 10px;
+    margin-left: 20px;
     font-size: 1.4vh;
     color: white;
   }

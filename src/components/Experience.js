@@ -5,6 +5,7 @@ import ccs from '../images/ccs.jpg'
 import article from '../images/article.jpg'
 import bgc from '../images/bgc.jpeg'
 import prince from '../images/prince.png'
+import dd from '../images/dailydime.png'
 
 class Experience extends React.Component {
   render() {
@@ -22,6 +23,7 @@ class Experience extends React.Component {
               "Corrected the interest payment in the core banking system by configuring the penalty rate API, resolving incorrect charges to 1200 bank members"
             ]}
             imageUrl={ccs}
+            ifProject={false}
           />
           <Section
             heading="ARTICLE"
@@ -34,6 +36,7 @@ class Experience extends React.Component {
               "Contributed to meetings on migrating the Monolithic architecture to Microservices, addressing necessary changes and database connections to align with the company's growth"
             ]}
             imageUrl={article}
+            ifProject={false}
           />
           <h2 className="exptitle">Projects</h2>
           <Section
@@ -45,16 +48,32 @@ class Experience extends React.Component {
               "Secured the system through user authorization and authentication with Passport.js and BCrypt hashing allowing members to correctly sign in and create accounts based off of current company position"
             ]}
             imageUrl={bgc}
+            ifProject={true}
+            technologies="React, JavaScript, Express, Node.js, PostgreSQL, Heroku, Github"
+          />
+          <Section
+            heading="DailyDime"
+            subheading="An android finance app"
+            details={[
+              "Developed a mobile app for managing personal finances through visualizations and illustrations to the user about their spending and saving habits",
+              "Utilized Firebase for secure user authentication and saving financial data for user-specific accounts",
+              "Incorporated Kotlin MVVM architecture for a modular structure and creating an easier way of adjusting the codebase"
+            ]}
+            imageUrl={dd}
+            ifProject={true}
+            technologies="Kotlin, Java, Firebase, Github"
           />
           <Section
             heading="Prince's Grand Escape"
-            subheading="A 2d Operating System Research Project"
+            subheading="A 2D OS Research Game Project"
             details={[
-              "Devised a game application for a research project to teach operating systems concepts to other students",
+              "Devised a game application for a research project with 3 other members to teach operating systems concepts to other students",
               "Implemeneted quiz pop ups and drag and drops on task attempts to illustrate OS topics and gave the user freedom to move around to decide on their path to escape",
               "Leveraged Docker for application containerization and utilized SFU services to host the game through Netlify"
             ]}
             imageUrl={prince}
+            ifProject={true}
+            technologies="TypeScript, Express, React-Three-Fiber, PostgreSQL, Docker, Netlify, Github"
           />
         </div>H
       </div>

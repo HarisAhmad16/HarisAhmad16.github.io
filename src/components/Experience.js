@@ -16,7 +16,7 @@ class Experience extends React.Component {
           <h2 className="exptitle">Work Experience</h2>
           <Section
             heading="Coast Capital Savings"
-            subheading="Software Developer Intern"
+            subheading="Software Developer Co-op"
             details={[
               "Developed a multi-threaded program to analyze over 100,000 credit card statuses, resulting in a condition correction for all stolen, damaged, inactive, or lost credit cards",
               "Created scripts in Python that evaluated and exported banking data into CSV files to help underly the businesses current needs and a variety of differences of monetary value",
@@ -28,7 +28,7 @@ class Experience extends React.Component {
           />
           <Section
             heading="ARTICLE"
-            subheading="Full Stack Software Engineer Intern"
+            subheading="Full Stack Software Engineer Co-op"
             details={[
               "Utilized Topics and Brokers from Apache Kafka to handle concurrent scan requests and real time processing of box counts, resulting in a 40% increase in time of obtaining warehouse data",
               "Designed the user interface of a warehouse tool connected to RF Scanners using Vue & TypeScript, resulting in an enhanced user experience and enabling easy usability",

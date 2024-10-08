@@ -3,6 +3,7 @@ import '../styles/experience.css';
 import Section from "./Section";
 import ccs from '../images/ccs.jpg'
 import article from '../images/article.jpg'
+import clio from '../images/clio.jpg'
 import bgc from '../images/bgc.jpeg'
 import prince from '../images/prince.png'
 import dd from '../images/dailydime.png'
@@ -14,6 +15,15 @@ class Experience extends React.Component {
       <div id="experience" className="experience">
         <div>
           <h2 className="exptitle">Work Experience</h2>
+          <Section
+            heading="Clio"
+            subheading="Software Developer Co-op"
+            details={[
+              "Currently part of the platform internal team and will conclude this co-op at the end of December this year."
+            ]}
+            imageUrl={clio}
+            ifProject={false}
+          />
           <Section
             heading="Coast Capital Savings"
             subheading="Software Developer Co-op"

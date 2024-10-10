@@ -19,7 +19,7 @@ class Experience extends React.Component {
             heading="Clio"
             subheading="Software Developer Co-op"
             details={[
-              "Currently part of the platform internal team and will conclude this co-op at the end of December this year."
+              "Currently part of the platform team and will conclude this co-op at the end of December this year."
             ]}
             imageUrl={clio}
             ifProject={false}
